@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hipotenusa</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            function  vacios(){
+	
+
+	let cateto1 = document.getElementById("c1").value;
+        let cateto2 = document.getElementById("c2").value;
+
+  
+    if(isNaN(cateto1) || isNaN(cateto2)){
+		window.alert("ingrese numeros validos ");
+		return false;
+    } else if( cateto1.length===0 || cateto2.length===0){ 
+              window.alert("llene los campos");
+		return false;
+               
+		}}
+  
+        </script>
+    </head>
+    <body>
+       
+        <form action="hipotenusa" method="get" >
+            <p> <strong> Digite cateto uno:</strong></p>
+            <p><input id="c1" type="text" name="cateto1" value="0"  ></p> 
+            <p> <strong> Digite cateto dos:</strong></p>
+            <p><input id="c2" type="text" name="cateto2" value="0" ></p> 
+            
+            <p><input type="submit" name="CALCULAR" onclick=" return vacios()" ></p> 
+            
+        </form>
+    </body>
+</html>
